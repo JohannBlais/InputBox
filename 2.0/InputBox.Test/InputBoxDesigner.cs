@@ -1,18 +1,22 @@
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Windows.Forms;
-
-namespace InputBox.Test
+namespace Sagile.Forms.Test
 {
+    using System;
+    using System.Windows.Forms;
+
     public partial class InputBoxDesigner : Form
     {
         public InputBoxDesigner()
         {
             InitializeComponent();
+        }
+
+        private void btnShow_Click(object sender, EventArgs e)
+        {
+            String stringValue = String.Empty;
+            bool boolValue;
+
+            InputBox.Show(out stringValue);
+            InputBox.Show(out boolValue);
         }
     }
 }

@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
 
-namespace InputBox.Test
+namespace Sagile.Forms.Test
 {
     static class Program
     {

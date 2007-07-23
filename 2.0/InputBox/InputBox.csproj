@@ -7,7 +7,7 @@
     <ProjectGuid>{8B45F0B6-AD4B-4E08-854D-C3530707B38C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>InputBox</RootNamespace>
+    <RootNamespace>Sagile.Forms</RootNamespace>
     <AssemblyName>InputBox</AssemblyName>
     <StartupObject>
     </StartupObject>
@@ -37,11 +37,19 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Component\Designer\SeparatorDesigner.cs" />
+    <Compile Include="Component\Separator.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\Separator.Designer.cs">
+      <DependentUpon>Separator.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form\InputBoxForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -50,6 +58,10 @@
     </Compile>
     <Compile Include="InputBox.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Component\Separator.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Separator.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form\InputBoxForm.resx">
       <SubType>Designer</SubType>
       <DependentUpon>InputBoxForm.cs</DependentUpon>
@@ -62,15 +74,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-    <Compile Include="Properties\Settings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Settings.settings</DependentUpon>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DesignTime>True</DesignTime>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
