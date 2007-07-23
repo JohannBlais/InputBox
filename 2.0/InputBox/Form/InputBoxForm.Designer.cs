@@ -41,7 +41,7 @@ namespace Sagile.Forms
             // 
             this.btnOk.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnOk.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnOk.Location = new System.Drawing.Point(100, 100);
+            this.btnOk.Location = new System.Drawing.Point(104, 104);
             this.btnOk.Name = "btnOk";
             this.btnOk.Size = new System.Drawing.Size(92, 23);
             this.btnOk.TabIndex = 0;
@@ -52,7 +52,7 @@ namespace Sagile.Forms
             // 
             this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.Location = new System.Drawing.Point(198, 100);
+            this.btnCancel.Location = new System.Drawing.Point(204, 104);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(92, 23);
             this.btnCancel.TabIndex = 1;
@@ -79,14 +79,14 @@ namespace Sagile.Forms
             // 
             this.lblDescription.Location = new System.Drawing.Point(12, 6);
             this.lblDescription.Name = "lblDescription";
-            this.lblDescription.Size = new System.Drawing.Size(278, 36);
+            this.lblDescription.Size = new System.Drawing.Size(278, 32);
             this.lblDescription.TabIndex = 5;
             this.lblDescription.Text = resources.GetString("lblDescription.Text");
             // 
             // separator1
             // 
             this.separator1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.separator1.Location = new System.Drawing.Point(0, 82);
+            this.separator1.Location = new System.Drawing.Point(0, 95);
             this.separator1.Margin = new System.Windows.Forms.Padding(0);
             this.separator1.MinimumSize = new System.Drawing.Size(2, 2);
             this.separator1.Name = "separator1";
