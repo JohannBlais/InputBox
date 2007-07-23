@@ -5,6 +5,18 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InputBox.Test", "InputBox.Test\InputBox.Test.csproj", "{8E088AA6-74C3-4FC5-BB97-1C9DBD4991F2}"
 EndProject
 Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs04.codeplex.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = InputBox\\InputBox.csproj
+		SccProjectName1 = InputBox
+		SccLocalPath1 = InputBox
+		SccProjectUniqueName2 = InputBox.Test\\InputBox.Test.csproj
+		SccProjectName2 = InputBox.Test
+		SccLocalPath2 = InputBox.Test
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
