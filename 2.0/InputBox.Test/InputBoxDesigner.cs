@@ -12,11 +12,11 @@ namespace Sagile.Forms.Test
 
         private void btnShow_Click(object sender, EventArgs e)
         {
-            String stringValue = String.Empty;
-            bool boolValue;
+            string value;
 
-            InputBox.Show(out stringValue);
-            InputBox.Show(out boolValue);
+            InputBox.Show(out value, "New name", "Please enter the new name.", HorizontalAlignment.Left);
+            InputBox.Show(out value, "New name", "Please enter the new name.", HorizontalAlignment.Center);
+            InputBox.Show(out value, "New name", "Please enter the new name.", HorizontalAlignment.Right);
         }
     }
 }

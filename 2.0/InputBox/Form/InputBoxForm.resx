@@ -117,7 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="lblDescription.Text" xml:space="preserve">
+  <data name="lblMainDescription.Text" xml:space="preserve">
     <value>The color gradient is a smooth shading of colors from the center point of the path to the outside boundary edge of the path. Blend factors, positions, and style affect where the gradient starts and ends, and how fast it changes shade.</value>
   </data>
 </root>
