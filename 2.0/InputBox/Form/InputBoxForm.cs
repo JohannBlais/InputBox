@@ -54,19 +54,26 @@ namespace Sagile.Forms
         /// <param name="parameters">The parameters.</param>
         public InputBoxForm(params object[] parameters) : this()
         {
-            int stringCounter = 0;
             foreach (object parameter in parameters)
             {
                 if (parameter is string)
                 {
-                    if (0 == stringCounter) lblFieldDescription.Text = (string) parameter;
-                    if (1 == stringCounter) lblMainDescription.Text = (string) parameter;
-                    if (2 == stringCounter) txbValue.Text = (string)parameter;
-                    ++stringCounter;
+                    txbValue.Text = (string) parameter;
                 }
                 else if (parameter is HorizontalAlignment)
                 {
                     _mainLabelAlignment = (HorizontalAlignment) parameter;
+                }
+                else if (parameter is string[])
+                {
+                    int stringCounter = 0;
+                    foreach (string value in parameter as String[])
+                    {
+                        if (0 == stringCounter) lblFieldDescription.Text = value;
+                        if (1 == stringCounter) lblMainDescription.Text = value;
+                        if (2 == stringCounter) Text = value;
+                        ++stringCounter;
+                    }
                 }
             }
             
@@ -94,10 +101,13 @@ namespace Sagile.Forms
 
             #region Sizes
 
+            int titleWidth = (int)graph.MeasureString(Text, SystemFonts.CaptionFont).Width + 30;
+
             int maxWidth = 0;
-            maxWidth = Math.Max(Math.Max(lblMainDescription.Width,
-                                         lblFieldDescription.Width + txbValue.Width + 5 + BORDER_PADDING * 2),
-                                MINIMUM_WIDTH);
+            maxWidth = Math.Max(Math.Max(Math.Max(lblMainDescription.Width,
+                                                  lblFieldDescription.Width + txbValue.Width + 5 + BORDER_PADDING * 2),
+                                         MINIMUM_WIDTH),
+                                titleWidth);
 
             ClientSize = new Size(maxWidth, ClientSize.Height);
 

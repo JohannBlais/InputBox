@@ -16,8 +16,12 @@ namespace Sagile.Forms
         ///     <description>The value will be used as</description>
         /// </listheader>
         /// <item>
+        ///     <term><see cref="System.String"/>[]</term>
+        ///     <description>the text of the label next to the text field for the first string, the text for the upper label for the second string, the title for the third string</description>
+        /// </item>
+        /// <item>
         ///     <term><see cref="System.String"/></term>
-        ///     <description>the text of the label next to the text field for the first string, the text for the upper label for the second string, and the default value for the third string</description>
+        ///     <description>the default value</description>
         /// </item>
         /// <item>
         ///     <term><see cref="System.Windows.Forms.HorizontalAlignment"/></term>

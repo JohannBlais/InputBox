@@ -14,9 +14,9 @@ namespace Sagile.Forms.Test
         {
             string value;
 
-            InputBox.Show(out value, "New name", "Please enter the new name.", HorizontalAlignment.Left);
-            InputBox.Show(out value, "New name", "Please enter the new name.", HorizontalAlignment.Center);
-            InputBox.Show(out value, "New name", "Please enter the new name.", HorizontalAlignment.Right);
+            InputBox.Show(out value, new string[] { "New name", "Left aligned", "Input" }, HorizontalAlignment.Left, "Default value");
+            InputBox.Show(out value, new string[] { "New name", "Centered", "Input" }, "Default value", HorizontalAlignment.Center);
+            InputBox.Show(out value, new string[] { "New name", "Right aligned", "Input" }, "Default value", HorizontalAlignment.Right);
         }
     }
 }
