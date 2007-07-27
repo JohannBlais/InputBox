@@ -6,7 +6,7 @@ namespace Sagile.Forms
     /// <summary>
     /// Displays a prompt in a dialog box, waits for the user to input text or click a button, and then returns a string containing the contents of the text box.
     /// </summary>
-    public class InputBox
+    public static class InputBox
     {
         /// <summary>
         /// Show an InputBox using the specified parameters.
